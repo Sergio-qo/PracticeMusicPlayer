@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="380dp"
+        android:layout_height="354dp"
+        android:contentDescription="@string/app_name"
+        app:srcCompat="@drawable/portada1"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <Button
+        android:id="@+id/btn_play"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="164dp"
+        android:layout_marginLeft="164dp"
+        android:background="@drawable/reproducir"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="393dp" />
+
+    <Button
+        android:id="@+id/btn_previous"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/anterior"
+        app:layout_constraintEnd_toStartOf="@+id/btn_play"
+        tools:layout_editor_absoluteY="395dp" />
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/siguiente"
+        app:layout_constraintStart_toEndOf="@+id/btn_play"
+        tools:layout_editor_absoluteY="393dp" />
+
+    <Button
+        android:id="@+id/btn_repeat"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/no_repetir"
+        app:layout_constraintEnd_toStartOf="@+id/btn_previous"
+        tools:layout_editor_absoluteY="395dp" />
+
+    <Button
+        android:id="@+id/btn_stop"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/detener"
+        app:layout_constraintStart_toEndOf="@+id/btn_next"
+        tools:layout_editor_absoluteY="395dp" />
+</android.support.constraint.ConstraintLayout>
